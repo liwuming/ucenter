@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+
+
+    <link href="https://static.ibiancheng.net/stackeditor/init.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://static.ibiancheng.net/ucenter/header.css">
+    <link rel="stylesheet" type="text/css" href="https://static.ibiancheng.net/ucenter/init.css">
+    <link rel="shortcut icon" href="https://cdn.ibiancheng.net/images/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <script>
+        let api_domain = 'https://v1.ibiancheng.net';
+        let api_domain1 = 'http://www.x2.com';
+        window.get_block_list = api_domain + "/block/getdatalist";
+        window.save_block1 = api_domain + "/block/save";
+        window.save_block = "/block/save";
+        window.get_block_contents = api_domain + "/block/get_block_contents";
+        window.save_chapter = api_domain + "/block/chapter";
+        window.editor_chapter = api_domain + "/block/get_chapter";
+    </script>
+
+    <div id="app"></div>
+</body>
+
+</html>
